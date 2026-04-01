@@ -21,8 +21,8 @@ jobs:
       with:
         dotnet-version: 8.0.x
     - name: Restore dependencies
-      run: dotnet FAKEbot restore
+      run: dotnet ChatBot.cs restore
     - name: Build
-      run: dotnet FAKEbot build --no-restore
+      run: dotnet ChatBot.cs build --no-restore
     - name: Test
-      run: dotnet FAKEbot test --no-build --verbosity normal
+      run: dotnet ChatBot.cs test --no-build --verbosity normal
